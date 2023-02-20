@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.musicgallery.mapper.AlbumMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.musicgallery.model.Album">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="description" property="description" />
+        <result column="artist_id" property="artistId" />
+        <result column="genre" property="genre" />
+        <result column="cover_image" property="coverImage" />
+        <result column="type" property="type" />
+        <result column="release_date" property="releaseDate" />
+        <result column="platform" property="platform" />
+        <result column="venue" property="venue" />
+        <result column="year" property="year" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, title, description, artist_id, genre, cover_image, type, release_date, platform, venue, year
+    </sql>
+
+</mapper>
